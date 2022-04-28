@@ -152,7 +152,7 @@ def solution(L, x, l, u):
 **제출 답안**<br>
 ```python
 def solution(L, x, l, u):
-    if x < l or x > u:
+    if l > u:
         return -1
     mid = (l + u) // 2
     if x == L[mid]:
